@@ -1,0 +1,23 @@
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+aironet-m(config)#hostname 28AAAP
+28AAAP(config)#dot11 ssid 28-WifiJSON-AA
+28AAAP(config-ssid)#authentication open
+28AAAP(config-ssid)#authentication key-management wpa
+28AAAP(config-ssid)#wpa-psk ascii C1sc0123
+28AAAP(config-ssid)#guest-mode
+28AAAP(config-ssid)#default Int Dot11Radio 0
+ default bridge-group 1 block-unknown-source <cr> not allowed on Dot11Radio0 interface
+ default bridge-group 1 subscriber-loop-control <cr> not allowed on Dot11Radio0 interface
+%command not allowed, cannot remove bridge-group 1Cannot disable station-role
+
+Interface Dot11Radio0 set to default configuration
+28AAAP(config)#int dot11radio 0
+28AAAP(config-if)#no shut
+28AAAP(config-if)#channel 4
+28AAAP(config-if)#encryption mode ciphers tkip
+28AAAP(config-if)#ssid 28-WifiJSON-AA
+28AAAP(config-if)#bridge-group 1
+28AAAP(config-if)#exit
+28AAAP(config)#end
+28AAAP#

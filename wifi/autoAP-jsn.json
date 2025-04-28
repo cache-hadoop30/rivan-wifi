@@ -1,0 +1,19 @@
+{
+    "aironetInfo": {
+        "device_type": "cisco_ios_telnet",
+        "host": "10.28.10.3",
+        "username": "admin",
+        "password": "pass",
+        "secret": "pass"
+    },
+
+    "aironetConfig": {
+        "hostname": "28AAAP",
+        "ssid": "28-WifiJSON-AA",
+        "authentication": "open",
+        "key-man": "wpa",
+        "wifi-pass": "C1sc0123",
+        "channel": "4",
+        "encr-mod": "tkip"
+    }
+}
